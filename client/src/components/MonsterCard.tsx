@@ -120,16 +120,21 @@ export default function MonsterCard() {
           )}
         </div>
 
-        {/* Health Bar */}
+        {/* Disease Strength Bar */}
         <div className="space-y-2">
           <div className="flex justify-between items-center">
-            <span className="text-sm font-medium">Health</span>
+            <span className="text-sm font-medium">Disease Strength</span>
             <span className="text-sm font-medium">{monster.health}/100</span>
           </div>
           <Progress
             value={healthPercentage}
             className="w-full bg-white/20"
           />
+          <p className="text-xs text-white/80 text-center">
+            {healthPercentage < 30 ? "Weak - Keep fighting!" : 
+             healthPercentage < 70 ? "Moderate - Stay consistent" : 
+             "Strong - Focus on healthy choices"}
+          </p>
         </div>
 
         {/* Monster Message */}
@@ -144,20 +149,20 @@ export default function MonsterCard() {
           <Button
             variant="secondary"
             className="bg-white/20 hover:bg-white/30 border-white/20 text-white"
-            onClick={() => feedMonsterMutation.mutate()}
-            disabled={feedMonsterMutation.isPending}
+            onClick={() => weakenMonsterMutation.mutate()}
+            disabled={weakenMonsterMutation.isPending}
           >
             <Heart className="h-4 w-4 mr-1" />
-            Feed
+            Fight Disease
           </Button>
           <Button
             variant="secondary"
             className="bg-white/20 hover:bg-white/30 border-white/20 text-white"
-            onClick={() => playWithMonsterMutation.mutate()}
-            disabled={playWithMonsterMutation.isPending}
+            onClick={() => meditationMutation.mutate()}
+            disabled={meditationMutation.isPending}
           >
-            <Gamepad2 className="h-4 w-4 mr-1" />
-            Play
+            <Sparkles className="h-4 w-4 mr-1" />
+            Meditate
           </Button>
         </div>
       </CardContent>

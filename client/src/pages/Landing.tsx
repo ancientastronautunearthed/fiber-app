@@ -44,11 +44,11 @@ export default function Landing() {
           <Card className="text-center hover:shadow-lg transition-shadow">
             <CardHeader>
               <Sparkles className="h-12 w-12 text-monster mx-auto mb-4" />
-              <CardTitle className="text-xl">AI Monster Companion</CardTitle>
+              <CardTitle className="text-xl">Fight Your Disease</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-gray-600">
-                Create your unique AI-generated monster companion that reacts to your health choices and motivates your journey.
+                Your AI monster represents your disease. Make healthy choices to weaken it, track symptoms to understand it, and take control of your health journey.
               </p>
             </CardContent>
           </Card>
