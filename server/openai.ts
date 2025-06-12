@@ -70,11 +70,11 @@ export async function analyzeNutrition(foodItems: string): Promise<NutritionData
       messages: [
         {
           role: "system",
-          content: "You are a nutrition analysis expert. Analyze food items and provide nutritional data and health impact assessment. For health impact, rate from -10 (very unhealthy) to +10 (very healthy) based on how this food would affect someone with Morgellons disease. Focus on anti-inflammatory properties, nutrient density, and potential triggers. Respond with JSON format."
+          content: "You are a nutrition analysis expert. Analyze food items and provide nutritional data and health impact assessment. For health impact, rate from -10 (very healthy/anti-inflammatory) to +10 (very unhealthy/inflammatory) based on how this food would affect someone with Morgellons disease. The rating represents how much this food would 'feed' or strengthen the disease. Focus on inflammatory properties, processed ingredients, and potential triggers. Respond with JSON format."
         },
         {
           role: "user",
-          content: `Analyze these food items for nutritional content: "${foodItems}". Provide estimated calories, protein (g), carbs (g), fat (g), sugar (g), a brief analysis of the nutritional quality, and a health impact score (-10 to +10) specifically for someone managing Morgellons disease. Consider anti-inflammatory properties and potential symptom triggers. Return JSON with fields: calories, protein, carbs, fat, sugar, aiAnalysis, healthImpact.`
+          content: `Analyze these food items for nutritional content: "${foodItems}". Provide estimated calories, protein (g), carbs (g), fat (g), sugar (g), a brief analysis of the nutritional quality, and a health impact score (-10 to +10) specifically for someone managing Morgellons disease. Score represents how much this food feeds the disease: -10 = very anti-inflammatory/healing, +10 = very inflammatory/disease-feeding. Consider processed ingredients, sugar content, and inflammatory properties. Return JSON with fields: calories, protein, carbs, fat, sugar, aiAnalysis, healthImpact.`
         }
       ],
       response_format: { type: "json_object" },

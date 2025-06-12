@@ -126,11 +126,12 @@ export async function registerRoutes(app: Express): Promise<Server> {
       
       const foodLog = await storage.createFoodLog(foodLogInput);
       
-      // Update monster health based on food quality
+      // Update monster health based on food quality (monster represents disease)
+      // Healthy food weakens the monster, unhealthy food strengthens it
       const monster = await storage.getUserActiveMonster(userId);
       if (monster) {
-        const healthChange = nutritionData.healthImpact || 0;
-        const newHealth = Math.max(0, Math.min(100, monster.health + healthChange));
+        const healthChange = -(nutritionData.healthImpact || 0); // Invert the impact
+        const newHealth = Math.max(0, Math.min(100, (monster.health || 100) + healthChange));
         await storage.updateMonsterHealth(monster.id, newHealth);
       }
       
@@ -169,12 +170,13 @@ export async function registerRoutes(app: Express): Promise<Server> {
       
       const symptomLog = await storage.createSymptomLog(symptomLogInput);
       
-      // Update monster health based on symptoms
+      // Update monster health based on symptoms (monster represents disease)
+      // Worse symptoms strengthen the monster, better feelings weaken it
       const monster = await storage.getUserActiveMonster(userId);
       if (monster) {
         const overallFeeling = symptomLogData.overallFeeling || 5;
-        const healthChange = Math.floor((overallFeeling - 5) * 2); // -10 to +10 range
-        const newHealth = Math.max(0, Math.min(100, monster.health + healthChange));
+        const healthChange = Math.floor((5 - overallFeeling) * 2); // Inverted: worse feeling = stronger monster
+        const newHealth = Math.max(0, Math.min(100, (monster.health || 100) + healthChange));
         await storage.updateMonsterHealth(monster.id, newHealth);
       }
       
@@ -213,12 +215,13 @@ export async function registerRoutes(app: Express): Promise<Server> {
       
       const sleepLog = await storage.createSleepLog(sleepLogInput);
       
-      // Update monster health based on sleep quality
+      // Update monster health based on sleep quality (monster represents disease)
+      // Poor sleep strengthens the monster, good sleep weakens it
       const monster = await storage.getUserActiveMonster(userId);
       if (monster) {
         const sleepQuality = sleepLogData.quality || 5;
-        const healthChange = Math.floor((sleepQuality - 5) * 1.5); // -7.5 to +7.5 range
-        const newHealth = Math.max(0, Math.min(100, monster.health + healthChange));
+        const healthChange = Math.floor((5 - sleepQuality) * 1.5); // Inverted: poor sleep = stronger monster
+        const newHealth = Math.max(0, Math.min(100, (monster.health || 100) + healthChange));
         await storage.updateMonsterHealth(monster.id, newHealth);
       }
       

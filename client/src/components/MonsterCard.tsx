@@ -15,10 +15,10 @@ export default function MonsterCard() {
     queryKey: ["/api/monster/active"],
   });
 
-  const feedMonsterMutation = useMutation({
+  const weakenMonsterMutation = useMutation({
     mutationFn: async () => {
-      // Simulate feeding monster - in real app this would be more complex
-      const newHealth = Math.min(100, (monster?.health || 0) + 5);
+      // Simulate healthy action that weakens the disease monster
+      const newHealth = Math.max(0, (monster?.health || 100) - 5);
       return { health: newHealth };
     },
     onSuccess: (data) => {
@@ -28,20 +28,25 @@ export default function MonsterCard() {
         health: data.health,
       }));
       toast({
-        title: "Monster fed!",
-        description: "Your monster gained 5 health points! 💚",
+        title: "Disease weakened!",
+        description: "Your healthy actions are fighting the disease!",
       });
     },
   });
 
-  const playWithMonsterMutation = useMutation({
+  const meditationMutation = useMutation({
     mutationFn: async () => {
-      // Simulate playing with monster
-      return { message: "Your monster enjoyed playing with you!" };
+      // Simulate meditation/mindfulness to fight the disease
+      const newHealth = Math.max(0, (monster?.health || 100) - 3);
+      return { health: newHealth, message: "Mindfulness practice weakens the disease!" };
     },
     onSuccess: (data) => {
+      queryClient.setQueryData(["/api/monster/active"], (old: any) => ({
+        ...old,
+        health: data.health,
+      }));
       toast({
-        title: "Playtime!",
+        title: "Meditation Complete",
         description: data.message,
       });
     },
@@ -81,13 +86,13 @@ export default function MonsterCard() {
     ? monster.descriptiveWords 
     : [];
 
-  // Generate a monster message based on health
+  // Generate a monster message based on health (monster represents the disease)
   const getMonsterMessage = (health: number) => {
-    if (health >= 90) return "I'm feeling fantastic! Thanks for taking such good care of yourself! ✨";
-    if (health >= 70) return "Doing great! Keep up the healthy habits! 😊";
-    if (health >= 50) return "I'm okay, but could use some better nutrition and rest. 💙";
-    if (health >= 30) return "I'm not feeling my best. Maybe we should focus on healthier choices? 😔";
-    return "I'm really struggling. Please take better care of yourself - I believe in you! 💜";
+    if (health >= 90) return "I'm thriving! Your unhealthy choices are feeding me well! 😈";
+    if (health >= 70) return "Not bad... but I could use more junk food and stress! 😏";
+    if (health >= 50) return "Meh, you're being too healthy lately. I'm getting weaker... 😒";
+    if (health >= 30) return "Ugh, all this healthy eating is making me sick! Stop it! 😤";
+    return "I'm barely hanging on... your healthy lifestyle is destroying me! 😵";
   };
 
   return (
