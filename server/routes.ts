@@ -472,6 +472,68 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  // Get AI health insights
+  app.get("/api/insights", isAuthenticated, async (req: any, res) => {
+    try {
+      const userId = req.user.claims.sub;
+      
+      // Get recent data for analysis
+      const [foodLogs, symptomLogs, sleepLogs, monster] = await Promise.all([
+        storage.getUserFoodLogs(userId),
+        storage.getUserSymptomLogs(userId),
+        storage.getUserSleepLogs(userId),
+        storage.getUserActiveMonster(userId)
+      ]);
+
+      // Calculate insights
+      const monsterHealth = monster?.health ?? 50;
+      const insights = {
+        diseaseProgress: {
+          trend: monsterHealth < 40 ? 'improving' : monsterHealth > 70 ? 'declining' : 'stable',
+          controlLevel: Math.max(0, 100 - monsterHealth),
+          summary: monsterHealth < 40 ? 
+            'Your healthy choices are effectively weakening the disease!' :
+            monsterHealth > 70 ? 
+            'The disease is getting stronger. Focus on consistent healthy habits.' :
+            'You\'re maintaining good control. Keep up your current routine.'
+        },
+        patterns: [] as any[],
+        positiveChanges: [] as any[],
+        weeklySummary: {
+          loggingDays: Math.min(7, foodLogs.length + symptomLogs.length + sleepLogs.length),
+          avgDiseaseStrength: monsterHealth,
+          bestDay: 'Today',
+          focusArea: monsterHealth > 60 ? 'Nutrition' : 'Sleep'
+        },
+        actionItems: [
+          'Continue logging your daily symptoms and meals',
+          'Focus on anti-inflammatory foods',
+          'Maintain consistent sleep schedule',
+          'Practice stress reduction techniques'
+        ]
+      };
+
+      // Add pattern detection based on recent logs
+      if (foodLogs.length > 3) {
+        insights.patterns.push({
+          description: 'Regular meal logging detected - great for tracking triggers!',
+          recommendation: 'Try to note how different foods affect your symptoms'
+        });
+      }
+
+      if (symptomLogs.length > 0 && symptomLogs[0]?.overallFeeling && symptomLogs[0].overallFeeling > 7) {
+        insights.positiveChanges.push({
+          description: 'Your recent symptom reports show improvement'
+        });
+      }
+
+      res.json(insights);
+    } catch (error) {
+      console.error("Error generating insights:", error);
+      res.status(500).json({ message: "Failed to generate insights" });
+    }
+  });
+
   const httpServer = createServer(app);
   return httpServer;
 }

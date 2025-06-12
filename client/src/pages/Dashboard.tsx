@@ -3,6 +3,7 @@ import Navigation from "@/components/Navigation";
 import TaskTracker from "@/components/TaskTracker";
 import MonsterCard from "@/components/MonsterCard";
 import QuickLogModal from "@/components/QuickLogModal";
+import HealthInsights from "@/components/HealthInsights";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Plus, Utensils, Activity, Smile } from "lucide-react";
@@ -132,6 +133,9 @@ export default function Dashboard() {
           <div className="space-y-6">
             {/* Monster Companion Panel */}
             <MonsterCard />
+            
+            {/* AI Health Insights */}
+            <HealthInsights />
 
             {/* Today's Riddle */}
             {todaysRiddle && (
