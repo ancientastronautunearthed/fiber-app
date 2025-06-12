@@ -1,0 +1,679 @@
+Application Vision Analysis and
+Suggested Improvements
+1. Core Application Vision (User's Original)
+The user envisions a web application for Morgellons Disease symptom, diet,
+supplement, prescription, sleep, and sun exposure tracking. Key features include:
+User Registration: First Name, Height, Weight, Age, Gender, City and State,
+Morgellons diagnosis status (diagnosed/suspect), misdiagnoses.
+Morgellons Monster: Users create a monster by entering 5 descriptive words. AI
+generates an image and name. This serves as their profile picture. Only one
+monster initially, new creations can be bought with in-app points.
+Monster Reactions: Monster reacts positively/negatively to food and symptom
+logs, humorously reflecting impact on its health bar (starts at 100). When health
+reaches zero, monster is
+placed in a tomb, user gets bonus points and creates a new monster. * Daily Food Log:
+Users can select common food items, enter text, or use AI for meal plans (daily/weekly)
+based on symptom entries. Log supplements (dose/frequency, auto-populate after first
+entry) and prescribed medications. * Nutrition Tracking: AI (Genkit) finds caloric data
+(protein, sugar, carbs, fat, calories) for food entries, storing it in a daily nutrition tracker
+viewable daily, weekly, or monthly. AI critiques user-entered meals, suggesting better
+alternatives. * Daily Symptoms/Activities Journal: Checkboxes for standard Morgellons
+symptoms, text box for custom symptoms. Log mood, estimated sun exposure, prior
+night's sleep. Option for current location detection for weather/humidity. Overall feeling
+rating (1-10). AI provides insights/recommendations. End-of-day symptom log to rate
+symptoms (better/worse) and overall feeling, with custom text entry. * Anonymous Data
+Submission: User data (symptoms, diet, location, supplement, sleep, height, weight,
+gender, age) is submitted anonymously to a large pool for pattern finding to aid research
+for a cure. Data available to participating users on a separate page. * Similar Symptoms
+Matcher: After 10 submissions, users can be matched with others having similar
+symptoms. Users can reach out via chat, view logs for comparison. * Community
+Center: Users share Morgellons horror stories, successful tactics/supplements. AI replies
+with analysis/commentary. Weekly
+submission winners for each category. * Doctor Registration/Access: Separate
+registration for Morgellons-based doctors (1 per state). Access to anonymous community
+•
+•
+•
+symptom tracker for research. Can view forum but not individual members unless
+contacted directly. Can then view logs and chat/consult. Doctor registration requires
+states of practice, bio, web address. Doctors can opt-in for daily AI-posted tips/messages
+in the forum (clearly marked as non-medical advice). * Gamification/Competitions:
+Daily AI-generated quizzes/challenges with competition against other members. Points
+for 1st, 2nd, 3rd place with AI-generated images for trophies (stored in user profile). Top
+3 monthly point leaders get custom progress analysis. 1st place: 2 months free
+subscription + 2 months free Morgellons Dating site. 2nd place: 1 month free + 1 month
+dating site. 3rd place: 1 month free subscription. * Monster Riddles: Daily riddle from
+user's monster in AI-generated monster voice (multiple choice). Users can spend points
+to remove answers or
+call another monster (if connected) for an answer in their deep monster voice. * Fiber
+Singles Site (Dating): Users create a romantic monster persona (5 words, AI-generated
+image). When two users chat privately, their monsters have a side conversation based on
+the user conversation, with a meter showing compatibility. Mini-games where users can
+gamble points on their monster winning. * Daily Task Tracker Dashboard: Shows all
+required daily entries: 2 meals, symptom log, sun exposure, acknowledge one post,
+monster riddle, prior night's sleep, end-of-day symptom log. * Points System: Points for
+actions, games, etc., to be determined and fair.
+2. Suggested Improvements and Added Features
+Based on the vision and research into chronic illness management and gamification,
+here are some suggested improvements and additional features to enhance the Fiber
+Friends application:
+2.1. Enhanced User Onboarding and Profile
+Guided Onboarding Flow: Implement a step-by-step onboarding process for new
+users, explaining the app's features, how to log data, and the purpose of the
+Morgellons Monster. This can improve user retention and data quality.
+Comprehensive Health Profile: Expand initial user registration to include more
+relevant health data points that could be valuable for research and personalized
+insights:
+Medical History: Relevant past medical conditions, surgeries, allergies.
+Medications (Current & Past): A more structured way to log all medications,
+including start/end dates, dosage, and frequency. This helps track long-term
+medication effects.
+Supplement History: Similar to medications, a structured log for
+supplements.
+•
+•
+◦
+◦
+◦
+Co-morbidities: Other diagnosed conditions that often co-occur with chronic
+illnesses (e.g., chronic fatigue syndrome, fibromyalgia, Lyme disease).
+Lifestyle Factors: Smoking status, alcohol consumption, exercise habits
+(type, frequency, duration).
+Environmental Factors: Home environment (e.g., mold exposure, water
+quality), occupation (stress levels, exposure to chemicals).
+Genetic Predisposition: If applicable and user is willing to share, family
+history of certain conditions.
+Privacy Controls: Clearly communicate how data is used for research and provide
+granular privacy settings for users to control what information is shared, even
+anonymously. This builds trust and encourages participation.
+2.2. Advanced Tracking and Insights
+Customizable Symptom Tracking: While checkboxes are good, allow users to
+define the intensity of symptoms (e.g., scale of 1-10) and track symptom duration.
+This provides richer data for AI analysis.
+Photo Logging for Skin Manifestations: Given Morgellons involves skin lesions,
+allow users to securely upload photos of their skin (with appropriate privacy
+warnings and consent) to track changes over time. AI could potentially analyze
+these for patterns or severity.
+Environmental Data Integration: Automatically pull in more detailed
+environmental data based on location (e.g., pollen count, air quality index, UV
+index) to correlate with symptoms. This goes beyond just weather and humidity.
+Wearable Device Integration: Allow integration with popular wearable devices
+(e.g., Fitbit, Apple Watch, Oura Ring) to automatically import sleep data, activity
+levels, and heart rate variability. This reduces manual entry and provides more
+accurate data.
+AI-Powered Trend Analysis and Predictive Insights: Beyond daily insights, the AI
+should analyze long-term trends. For example:
+Symptom-Trigger Correlation: Identify potential triggers for symptom flares
+(e.g., certain foods, weather patterns, stress levels).
+Treatment Efficacy: Analyze the effectiveness of different treatments
+(supplements, prescriptions) based on symptom improvement.
+Proactive Recommendations: Suggest lifestyle adjustments or interventions
+based on predicted symptom patterns.
+◦
+◦
+◦
+◦
+•
+•
+•
+•
+•
+•
+◦
+◦
+◦
+◦
+Personalized Reports: Generate periodic (weekly/monthly) personalized
+reports summarizing the user's progress, key insights, and recommendations.
+These could be downloadable PDFs.
+2.3. Enhanced Gamification and Engagement
+More Diverse Monster Interactions: Beyond positive/negative reactions, monsters
+could:
+Offer encouraging words or motivational messages.
+Suggest small, achievable daily health goals.
+Celebrate small victories (e.g., a streak of healthy eating).
+Have unique animations or sounds for different reactions.
+Monster Evolution/Customization: Allow users to further customize their
+monster's appearance with earned points or achievements (e.g., new colors,
+accessories, body parts). This adds a deeper layer of personalization and
+reward.
+Daily Challenges with Monster Integration: Beyond quizzes, introduce daily
+health challenges (e.g.,
+try a new anti-inflammatory food, meditate for 5 minutes) where the monster acts as a
+coach or cheerleader. * Interactive Storylines: Develop short, branching storylines
+within the app where user choices (related to health decisions) affect the monster's
+journey or unlock new content. * **
+Virtual Garden/Habitat for Monster: Users could earn items or currency to build and
+customize a virtual garden or habitat for their monster, which thrives based on their
+consistent health tracking and positive actions. * Collaborative Challenges: Introduce
+challenges where users can team up with others (e.g., those matched by similar
+symptoms) to achieve a common health goal, fostering a sense of community and
+shared purpose. * Seasonal Events/Limited-Time Challenges:** Implement special inapp events or challenges tied to seasons or health awareness days, offering unique
+rewards and keeping the app fresh.
+2.4. Community and Social Features
+Moderation and Safety: Implement robust moderation tools and guidelines for
+the community forum and chat features to ensure a safe and supportive
+environment, especially given the sensitive nature of Morgellons disease.
+◦
+•
+◦
+◦
+◦
+◦
+◦
+◦
+◦
+•
+Expert Q&A Sessions: Organize live or asynchronous Q&A sessions with the
+registered doctors or other medical experts, allowing users to submit questions
+and receive credible information.
+Resource Library: Create a curated library of reliable information about
+Morgellons disease, including research articles, coping strategies, and reputable
+external resources. This can be a valuable addition to the community center.
+Local Support Groups: Facilitate the creation or discovery of local in-person or
+online support groups based on user location, fostering real-world connections.
+2.5. Doctor Portal Enhancements
+Secure Communication Channels: Ensure highly secure and HIPAA-compliant
+communication channels for doctors to interact with individual patients.
+Anonymized Data Visualization for Doctors: Provide advanced data visualization
+tools for doctors to explore the anonymized community data, allowing them to
+identify trends, correlations, and potential research avenues more effectively.
+Research Collaboration Tools: If feasible, offer tools for doctors to collaborate on
+research initiatives using the anonymized data, potentially leading to
+breakthroughs.
+Educational Content for Doctors: Provide a platform for doctors to share their
+insights, case studies (anonymized), and best practices with other registered
+doctors.
+2.6. Monetization and Sustainability
+Tiered Subscription Model: Beyond the current free/premium model, consider
+different tiers with varying levels of features (e.g., basic tracking free, advanced
+insights/premium monster customization/more dating features for higher tiers).
+In-App Purchases: Allow users to purchase cosmetic items for their monsters,
+additional monster creations, or special mini-game passes using real money (in
+addition to earned points).
+Premium Content: Offer exclusive content like advanced meal plans, guided
+meditations, or expert webinars as part of a premium subscription.
+Affiliate Partnerships: Explore partnerships with reputable supplement or health
+product companies that align with the app's mission, offering curated
+recommendations to users (with clear disclosure).
+2.7. Technical Considerations and Platform Specifics
+Cross-Platform Development Framework: Given the requirement for both web
+and mobile (iOS/Android) applications, a cross-platform framework like React
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+Native or Flutter is highly recommended. This allows for a single codebase for all
+platforms, significantly reducing development time and cost while maintaining a
+native look and feel. The AI developer should be proficient in one of these.
+Firebase Studio Integration: The user explicitly mentioned Firebase Studio.
+Ensure the AI developer leverages its capabilities for seamless integration with
+Firebase services (Authentication, Firestore, Storage, Cloud Functions).
+Scalability: Design the database and backend architecture for scalability to handle
+a growing user base and increasing data volume.
+Security and Data Privacy: Implement robust security measures, including endto-end encryption for sensitive data, regular security audits, and strict adherence
+to data privacy regulations (e.g., GDPR, HIPAA).
+Offline Capabilities: Consider implementing offline data synchronization for core
+tracking features, allowing users to log data even without an internet connection,
+which then syncs when online.
+Performance Optimization: Optimize the application for fast loading times and
+smooth user experience across all platforms and devices.
+Accessibility: Ensure the application is accessible to users with disabilities,
+following WCAG guidelines.
+3. Development Document for AI Developer
+This section outlines the detailed instructions for the AI web application developer to
+build the Fiber Friends application. It incorporates the user's original vision, the
+suggested improvements, and the technical considerations.
+3.1. Project Overview
+Project Name: Fiber Friends
+Goal: To create a comprehensive, engaging, and supportive cross-platform (Web, iOS,
+Android) application for individuals managing Morgellons Disease, leveraging AI for
+personalized insights, gamification for engagement, and a robust community platform
+for peer and expert support.
+Target Audience: Individuals with Morgellons Disease (diagnosed or suspected), and
+medical professionals specializing in Morgellons Disease.
+Technology Stack: * Frontend: React Native (for cross-platform mobile) and a
+compatible web framework (e.g., React.js) for the web application. The AI developer
+should choose the most efficient approach for shared components. * Backend/
+Database/Authentication/Storage: Firebase (Firestore, Authentication, Storage, Cloud
+Functions). * AI/ML Integration: Google Genkit / Gemini API for AI-powered features.
+•
+•
+•
+•
+•
+•
+3.2. Firebase Configuration
+The following Firebase credentials from the provided .env.local file must be securely
+integrated into the application. The AI developer MUST ensure that client-side keys are
+exposed only to the client, and server-side keys are used exclusively on the server.
+Client-Side Configuration (for Web and Mobile Client SDKs):
+NEXT_PUBLIC_FIREBASE_API_KEY="AIzaSyC3AhSg8eAklYDf6PcDkWqO3OMmTjzhEg"
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN="fiberfriends-9b614.firebaseapp.com"
+NEXT_PUBLIC_FIREBASE_PROJECT_ID="fiber-friends"
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET="fiberfriends.firebasestorage.app"
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID="202818399028"
+NEXT_PUBLIC_FIREBASE_APP_ID="1:202818399028:web:
+225a88b017a6b584cfd361"
+Server-Side Configuration (for Firebase Admin SDK, e.g., Cloud Functions):
+FIREBASE_PROJECT_ID="fiber-friends"
+FIREBASE_CLIENT_EMAIL="firebase-adminsdk-fbsvc@fiberfriends.iam.gserviceaccount.com"
+FIREBASE_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----
+\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC8aucqa6v/
+nQ5c\ndMLl4UcBF7OwZbNVFkfu74u2CA3ZdiBUd0D9+UsNUyVnOEWUpIIu7PaQYyhA0wuQ\ntYa\nnFLqVUPLAgMBAAECggEANO2q5mW8uV97K0m5fi4cbhgkaAcJq3tI1bwA+S+mBFKE\nnnWpkwSld64\nMmwq6yaDd0Yoz8ryTUMOo/
++WxiT3G0NIZIN9kYr5Oa1qraunakSXOmtHvozdgY1e\nkTbqqXsQLMOyPZgIJECzj0ic6ZD8FXje0BHs0jjwvKgUMS\npzfZ1Sq13/
+DNoiywGMHfBLX50fS5U7+hivACh1JLA6JZ+Agk1JdtvUaIO5ufIuQh\nw2qGq/
+BEydyeAS1+m/SK+TC0SpumGO5xGWJPHw7WEQKBgQDsSyYt4O9s/
+nyrfcag\n5jxykOSfj1Va0W8CK7JPvWr1qDhkjqT2c5GPlYOeSciu0JjYllnYbcoPV//
+74bUe\nMgrV41Fed1dctvf+qRL+4lIR5l6F3L1BpOkKwCGgVfolqy0PgVny0EJbFBfRu6zc\nE1GeTcYyQjdRvQKBgQDMIZr8JF7BV1xCpR9p2Jj9EIP14PE5pELl\nv1t7764oIdVgcSt1B2uvBXV6YtE9b3MMabWu4hFA8pO\nWyV+OLwQJwKBgGq+Q9VfDOgp6K5G6DdSLh2pDlK75Lnn7wy/
+zvXRijUYRPrZtExn\nnCw+IqbaMBSCECdaOt14R+DsRVngm0oPYBXZlq1t5Wb3kbv8E2FtK0+HzmoEz\n/
+1lMqwnfoDhT3m495enb3jgWj6SOnSz7kCkjx4H2ipcvdBxpowvTcBrVkuRBnYNd\n1D70MnZq2END PRIVATE KEY-----\n"
+**AI/ML API Key:**
+GEMINI_API_KEY="AIzaSyApD38IBmtCZE8qL4-2A7_pz2zy4GzQSNc" ```
+3.3. User-Facing Features (Detailed Requirements)
+3.3.1. User Authentication and Profile Management
+Registration:
+Fields: First Name, Height (units: cm/inch), Weight (units: kg/lbs), Age, Gender
+(dropdown: Male, Female, Non-binary, Prefer not to say), City, State.
+Morgellons Status: Radio buttons for
+"Diagnosed with Morgellons" and "Suspect Morgellons". * Misdiagnoses: Text area for
+users to list any prior misdiagnoses. * New: Medical History (text area), Current
+Medications (list with dosage/frequency/start/end date), Supplement History (list with
+dosage/frequency/start/end date), Co-morbidities (checkboxes/multi-select for common
+chronic illnesses), Lifestyle Factors (smoking, alcohol, exercise habits), Environmental
+Factors (text area for home environment, occupation), Genetic Predisposition (text area).
+* Login: Standard email/password authentication via Firebase Authentication. * Profile
+Editing: Users can edit their profile information at any time. * Morgellons Monster
+Creation: * Input: Text field for 5 descriptive words. * AI Integration: Call Gemini API (via
+Firebase Cloud Function for server-side processing) to generate an image and name for
+the monster based on the input words. Store image in Firebase Storage and monster
+data in Firestore. * Display: Monster image and name as user profile picture. * Constraint:
+Only one monster creation initially. Option to purchase new creations with in-app
+points.
+3.3.2. Daily Tracking Features
+Daily Food Log:
+Input Methods:
+Selectable Common Food Items: Pre-populated list of common food
+items. When selected, AI (Genkit/Gemini via Cloud Function) retrieves
+and displays nutritional data (calories, protein, sugar, carbs, fat, etc.).
+Text Entry: Users can type in food items. AI (Genkit/Gemini via Cloud
+Function) processes text to identify food and retrieve nutritional data.
+AI-Generated Meal Plan: Button to request AI-generated meal plan for
+the day or week, based on user's Daily Symptoms Journal entries and
+dietary preferences (to be added to user profile).
+Supplement Logging:
+Input: Supplement name, dose, frequency.
+Auto-populate: After first entry, supplement names should autopopulate for quick selection.
+Management: Users can remove supplements from their list.
+Prescribed Medications: Text box for prescribed medications.
+•
+◦
+◦
+•
+◦
+▪
+▪
+▪
+◦
+▪
+▪
+▪
+◦
+Data Storage: All food, supplement, and medication entries, along with their
+nutritional data, stored in Firestore, linked to user and date.
+Daily Nutrition Tracker:
+Display: View daily, weekly, and monthly intake of nutrition (calories, protein,
+sugar, carbs, fat) and supplement intake.
+AI Critique: For user-entered meals (not AI-generated), AI (Genkit/Gemini via
+Cloud Function) provides a positive review or suggests better alternatives for
+Morgellons-fighting foods.
+Daily Symptoms/Activities Journal:
+Symptom Entry:
+Checkboxes: Standard Morgellons symptoms (list to be provided or
+dynamically managed).
+Custom Symptoms: Text area for custom symptom descriptions.
+New: Intensity Scale: For each symptom (checkbox or custom), allow
+users to select intensity (e.g., 1-10 scale).
+New: Photo Logging: Secure photo upload feature for skin
+manifestations, with consent and privacy warnings. Images stored in
+Firebase Storage.
+Mood: Selectable options for mood (e.g., happy, sad, anxious, neutral).
+Sun Exposure: Estimated total hours of sun exposure.
+Sleep: Total hours of sleep from the prior evening.
+Location Data: Option to detect current location for weather and humidity
+submission. New: Also integrate pollen count, air quality index, and UV index
+based on location.
+Overall Feeling: Rating from 1-10.
+AI Insights: After submission, AI (Genkit/Gemini via Cloud Function) provides
+insights and recommendations for managing Morgellons Disease.
+End-of-Day Symptom Log: Separate section (available after hitting
+"End Day" button) where users rate each symptom as better/worse than the start of the
+day, re-rate overall feeling, and add custom text entries.
+3.3.3. Morgellons Monster Mechanics
+Monster Health Bar: Starts at 100. Increases/decreases based on daily entries and
+participation.
+Reactions: AI (Genkit/Gemini via Cloud Function) analyzes food consumed and
+daily symptom logs to determine positive/negative reactions. Reactions should be
+humorous and reflect the monster's
+well-being. New: Implement diverse monster interactions beyond just positive/negative,
+such as offering encouragement, suggesting goals, celebrating victories, and having
+◦
+•
+◦
+◦
+•
+◦
+▪
+▪
+▪
+▪
+◦
+◦
+◦
+◦
+◦
+◦
+◦
+•
+•
+unique animations/sounds. * Monster Tomb and Rebirth: When monster health
+reaches zero, it is placed in a
+tomb in the user profile. User receives bonus points and can create a new monster. *
+New: Monster Evolution/Customization: Allow users to customize monster appearance
+(colors, accessories, body parts) with earned points/achievements. * New: Virtual
+Garden/Habitat: Users can earn items/currency to build a virtual garden/habitat for
+their monster, which thrives based on health tracking.
+3.3.4. Data-Driven Insights and Research
+Anonymous Data Submission:
+Mechanism: User data (symptoms, diet, location, supplement, sleep, height,
+weight, gender, age, New: medical history, medications, co-morbidities,
+lifestyle, environmental factors) is submitted anonymously to a centralized
+Firestore collection for research.
+User Control: A checkbox (automatically checked) informs the user about
+anonymous submission. Users can uncheck to opt-out.
+Data Access: Participating users can view aggregated, anonymized data on a
+separate page to find patterns and similarities.
+Similar Symptoms Matcher:
+Trigger: Activated after at least 10 daily submissions.
+Matching Logic: AI (Cloud Function) matches users with similar symptom
+profiles based on logged data.
+Interaction: Users can reach out directly to matched community members via
+a built-in chat interface. Upon connection, they can view each other's
+symptom and dietary logs.
+New: AI-Powered Trend Analysis and Predictive Insights:
+Functionality: AI (Cloud Function) analyzes long-term trends in user data.
+Outputs: Identify symptom-trigger correlations, assess treatment efficacy,
+provide proactive recommendations for lifestyle adjustments.
+New: Personalized Reports: Generate periodic (weekly/monthly) personalized
+reports summarizing user progress, key insights, and recommendations.
+Exportable as PDFs.
+3.3.5. Community and Social Features
+Community Center:
+Content: Users can share Morgellons horror stories, successful tactics/
+supplements.
+AI Interaction: AI (Genkit/Gemini via Cloud Function) replies to each entry
+with analysis and commentary.
+•
+◦
+◦
+◦
+•
+◦
+◦
+◦
+•
+◦
+◦
+•
+•
+◦
+◦
+Competitions: Weekly submission winners for each category.
+New: Moderation and Safety: Implement robust moderation tools and guidelines
+for the community forum and chat features.
+New: Expert Q&A Sessions: Facilitate live or asynchronous Q&A sessions with
+registered doctors/experts.
+New: Resource Library: Curated library of reliable information about Morgellons
+disease.
+New: Local Support Groups: Facilitate discovery of local in-person or online
+support groups.
+3.3.6. Doctor Portal
+Registration: Separate registration for doctors. Requires states of legal practice,
+bio, web address.
+Access: Doctors have access to the anonymous community symptom tracker for
+research purposes.
+Forum View: Doctors can view the community forum but cannot see individual
+community members unless contacted directly.
+Patient Interaction: If a community member reaches out, the doctor can view
+their symptoms and dietary logs and chat via chat or set up a consultation.
+AI Tips/Messages: Doctors can opt-in to have AI (Genkit/Gemini via Cloud
+Function) post daily tips, tricks, and motivational messages in the community
+forum. Messages must clearly state they are not medical advice.
+New: Secure Communication Channels: Implement HIPAA-compliant
+communication for doctor-patient interactions.
+New: Anonymized Data Visualization: Provide advanced data visualization tools
+for doctors to explore aggregated community data.
+New: Research Collaboration Tools: Tools for doctors to collaborate on research
+using anonymized data.
+New: Educational Content for Doctors: Platform for doctors to share insights and
+best practices.
+3.3.7. Gamification and Engagement
+Daily Quizzes/Challenges: AI-generated quizzes or timed gradable challenges with
+competition against other forum members.
+Points System: Points awarded for 1st, 2nd, 3rd place. Points for actions, game
+participation, daily entries (to be determined and fair).
+Trophy Case: AI-generated images for each place won, stored in user’s profile
+trophy case.
+Monthly Leaderboard Rewards:
+Top 3 monthly point leaders receive custom analysis of their progress.
+◦
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+◦
+1st place: 2 months free subscription + 2 months free Morgellons Dating site.
+2nd place: 1 month free subscription + 1 month dating site.
+3rd place: 1 month free subscription.
+New: Consider additional free awards like exclusive in-app content, virtual
+items, or early access to new features.
+Monster Riddles:
+Daily riddle from user’s monster in AI-generated monster voice (audio
+output).
+Multiple choice format.
+Point Spending: Users can spend points to remove 2 answers or
+call another monster (if connected) for an answer in their own deep monster voice.
+3.3.8. Fiber Singles Site (Dating)
+Romantic Monster Persona: Users enter 5 words to describe their romantic
+monster persona. AI generates an image.
+Monster Side Conversations: When two users connect in a private chat, their
+monsters will have a side conversation based on the user’s conversation. Every
+submitted message will prompt that user’s monster to submit a message to the
+other user’s monster.
+Compatibility Meter: A meter to show how well the monsters (and by extension,
+the users) are getting along.
+Mini-Games: Users can play mini-games against each other. New: At least one
+mini-game where their monsters can play against each other, with users gambling
+points on their monster winning. Ideas for mini-games:
+**
+Monster Battle Arena: A turn-based card game where monsters use their unique traits
+(derived from the 5 descriptive words) as attack/defense stats. Users bet points on
+their monster. * Riddle Duel: Monsters challenge each other with riddles, and users
+answer for their monster. Faster/correct answers earn points. * Co-op Quest:**
+Monsters embark on a short, collaborative quest, and users make choices that affect the
+outcome, earning shared points.
+3.3.9. Daily Task Tracker Dashboard
+Dashboard Display: Shows all required entries for that day:
+Submit at least 2 meals.
+Complete daily symptom log.
+Log sun exposure for the day.
+◦
+◦
+◦
+◦
+•
+◦
+◦
+◦
+•
+•
+•
+•
+◦
+•
+◦
+◦
+◦
+Acknowledge at least one post by commenting or hitting an "Acknowledge"
+button on someone’s post.
+Take their monster’s riddle.
+Enter sleep from the night before.
+Complete end-of-day symptom log (becomes available after user hits "End
+Day" button).
+Progress Tracking: Visual indicators (e.g., checkboxes, progress bars) for
+completed tasks.
+3.4. Technical Implementation Details
+3.4.1. Cross-Platform Development
+The AI developer MUST utilize a cross-platform framework such as React Native
+(for iOS and Android mobile applications) and React.js (for the web application) to
+maximize code reusability and ensure a consistent user experience across all
+platforms. Shared components and logic should be prioritized.
+The application should be designed with a responsive UI/UX to adapt seamlessly to
+various screen sizes and orientations (mobile phones, tablets, web browsers).
+3.4.2. Firebase Integration
+Firebase Authentication: Implement email/password authentication. Explore
+adding social logins (Google, Apple) for enhanced user convenience.
+Firestore Database:
+Design a scalable and efficient Firestore data model for user profiles, monster
+data, daily logs (food, symptoms, sleep, sun exposure), community posts,
+chat messages, and doctor information.
+Utilize Firestore security rules to ensure data integrity and user privacy.
+Implement real-time data synchronization for features like chat and monster
+health updates.
+Firebase Storage: Store user-generated content such as Morgellons Monster
+images and user-uploaded symptom photos securely.
+Firebase Cloud Functions:
+Crucial for all AI/ML integrations (Gemini API calls for monster creation, meal
+plan generation, symptom analysis, monster reactions, riddle generation,
+doctor tips).
+Handle server-side logic for sensitive operations (e.g., processing private keys
+for Firebase Admin SDK).
+Implement functions for data aggregation and analysis for the anonymous
+research pool.
+Manage points system logic and leaderboard updates.
+◦
+◦
+◦
+◦
+•
+•
+•
+•
+•
+◦
+◦
+◦
+•
+•
+◦
+◦
+◦
+◦
+3.4.3. AI/ML Integration (Gemini API via Genkit)
+All AI-powered features (monster creation, meal plans, symptom insights, monster
+reactions, riddles, doctor tips, meal critiques, monster side conversations) MUST be
+powered by the Gemini API, orchestrated via Google Genkit.
+Ensure efficient API calls and error handling for a smooth user experience.
+3.4.4. Data Security and Privacy
+Implement end-to-end encryption for all sensitive user data, both in transit and at
+rest.
+Adhere strictly to data privacy regulations (e.g., GDPR, HIPAA, CCPA) in data
+collection, storage, and processing.
+Conduct regular security audits and penetration testing.
+Provide clear and transparent privacy policies and terms of service to users.
+3.4.5. Scalability and Performance
+Design the application architecture to handle a growing user base and increasing
+data volume without performance degradation.
+Optimize database queries and cloud function execution for speed and efficiency.
+Implement caching mechanisms where appropriate.
+3.4.6. Offline Capabilities
+For core tracking features (food log, symptom log), implement offline data entry
+with automatic synchronization to Firestore when an internet connection is
+restored.
+3.4.7. Accessibility
+Develop the application following Web Content Accessibility Guidelines (WCAG) to
+ensure it is usable by individuals with disabilities.
+3.5. Development Workflow and Deliverables
+Version Control: Use Git for version control, hosted on a platform like GitHub or
+GitLab.
+Documentation: Maintain clear and concise code documentation, API
+documentation, and deployment instructions.
+Testing: Implement comprehensive unit, integration, and end-to-end tests.
+Deployment: Provide clear instructions for deploying the web application and
+publishing the mobile applications to the Apple App Store and Google Play Store.
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+Deliverables:
+Fully functional web application.
+Fully functional iOS application.
+Fully functional Android application.
+Source code with comprehensive documentation.
+Database schema and security rules.
+Deployment scripts and instructions.
+User manual/guide.
+3.6. Future Considerations (Beyond Initial Prototype)
+Push Notifications: For reminders (medication, daily logs), new community posts,
+or monster interactions.
+Advanced Analytics Dashboard: For users to gain deeper insights into their health
+data.
+Integration with other Health Platforms: (e.g., Apple HealthKit, Google Fit) for
+broader data synchronization.
+Telehealth Integration: Direct video/audio calls with doctors within the app.
+Multi-language Support: To cater to a global audience.
+•
+◦
+◦
+◦
+◦
+◦
+◦
+◦
+•
+•
+•
+•
+• 
